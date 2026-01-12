@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Grid Layout</h1>
+
+    <p>A Grid Layout must have a parent element with the <em>display</em>property set to <em>grid</em>or <em>inlin-grid</em>.</p>
+
+    <p>Direct child element (S) of the grid container automatically becomes grid items.</p>
+    
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          background-color: dodgerblue;
+          padding: 10px;
+        }
+        .container > div {
+         background-color: #f1f1f1;
+         border: 1px solid black;
+         font-size: 30px;
+         padding: 10px;
+         text-align: center;
+        }
+    </style>
+
+    <br><br>
+
+    <h1>display:grid</h1>
+
+    <p>Use display: grid; to make a block-level grid container;</p>
+
+    <div class="container">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+       <div>7</div>
+       <div>8</div>
+    </div>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: dodgerblue;
+            padding: 10px;
+        }
+        .container > div {
+            background-color: #f1f1f1;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+                text-align: center;
+        }
+    </style>
+
+    
+     
+</body>
+</html>
